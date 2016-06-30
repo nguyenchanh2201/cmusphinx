@@ -1,0 +1,202 @@
+        INFO: main.c(229): Compiled on May 25 2016 at 23:33:03
+Current configuration:
+[NAME]		[DEFLT]		[VALUE]
+-2passvar	no		yes
+-abeam		1e-100		1.000000e-90
+-accumdir			/home/nguyenchanh/project_beta/bwaccumdir/project_beta_buff_1
+-agc		none		none
+-agcthresh	2.0		2.000000e+00
+-bbeam		1e-100		1.000000e-10
+-cb2mllrfn	.1cls.		.1cls.
+-cepdir				/home/nguyenchanh/project_beta/feat
+-cepext		mfc		mfc
+-ceplen		13		13
+-ckptintv			0
+-cmn		current		current
+-cmninit	8.0		8.0
+-ctlfn				/home/nguyenchanh/project_beta/etc/project_beta_train.fileids
+-diagfull	no		no
+-dictfn				/home/nguyenchanh/project_beta/etc/project_beta.dic
+-example	no		no
+-fdictfn			/home/nguyenchanh/project_beta/etc/project_beta.filler
+-feat		1s_c_d_dd	s2_4x
+-fullvar	no		no
+-help		no		no
+-hmmdir				
+-latdir				
+-latext				
+-lda				
+-ldadim		0		0
+-lsnfn				/home/nguyenchanh/project_beta/etc/project_beta_train.transcription
+-lw		11.5		1.150000e+01
+-maxuttlen	0		0
+-meanfn				/home/nguyenchanh/project_beta/model_parameters/project_beta.ci_semi/means
+-meanreest	yes		yes
+-mixwfn				/home/nguyenchanh/project_beta/model_parameters/project_beta.ci_semi/mixture_weights
+-mixwreest	yes		yes
+-mllrmat			
+-mmie		no		no
+-mmie_type	rand		rand
+-moddeffn			/home/nguyenchanh/project_beta/model_architecture/project_beta.ci.mdef
+-mwfloor	0.00001		1.000000e-08
+-npart				1
+-nskip				0
+-outphsegdir			
+-outputfullpath	no		no
+-part				1
+-pdumpdir			
+-phsegdir			
+-phsegext	phseg		phseg
+-runlen		-1		-1
+-sentdir			
+-sentext	sent		sent
+-spthresh	0.0		0.000000e+00
+-svspec				
+-timing		yes		no
+-tmatfn				/home/nguyenchanh/project_beta/model_parameters/project_beta.ci_semi/transition_matrices
+-tmatreest	yes		yes
+-topn		4		8
+-tpfloor	0.0001		1.000000e-04
+-ts2cbfn			.semi.
+-varfloor	0.00001		1.000000e-04
+-varfn				/home/nguyenchanh/project_beta/model_parameters/project_beta.ci_semi/variances
+-varnorm	no		no
+-varreest	yes		yes
+-viterbi	no		no
+
+INFO: feat.c(715): Initializing feature stream to type: 's2_4x', ceplen=13, CMN='current', VARNORM='no', AGC='none'
+INFO: cmn.c(143): mean[0]= 12.00, mean[1..12]= 0.0
+INFO: main.c(318): Reading /home/nguyenchanh/project_beta/model_architecture/project_beta.ci.mdef
+INFO: model_def_io.c(573): Model definition info:
+INFO: model_def_io.c(574): 19 total models defined (19 base, 0 tri)
+INFO: model_def_io.c(575): 76 total states
+INFO: model_def_io.c(576): 57 total tied states
+INFO: model_def_io.c(577): 57 total tied CI states
+INFO: model_def_io.c(578): 19 total tied transition matrices
+INFO: model_def_io.c(579): 4 max state/model
+INFO: model_def_io.c(580): 4 min state/model
+INFO: s3mixw_io.c(117): Read /home/nguyenchanh/project_beta/model_parameters/project_beta.ci_semi/mixture_weights [57x4x8 array]
+INFO: s3tmat_io.c(118): Read /home/nguyenchanh/project_beta/model_parameters/project_beta.ci_semi/transition_matrices [19x3x4 array]
+INFO: mod_inv.c(301): inserting tprob floor 1.000000e-04 and renormalizing
+INFO: s3gau_io.c(169): Read /home/nguyenchanh/project_beta/model_parameters/project_beta.ci_semi/means [1x4x8 array]
+INFO: s3gau_io.c(169): Read /home/nguyenchanh/project_beta/model_parameters/project_beta.ci_semi/variances [1x4x8 array]
+INFO: gauden.c(176): 1 total mgau
+INFO: gauden.c(150): 4 feature streams (|0|=12 |1|=24 |2|=3 |3|=12 )
+INFO: gauden.c(187): 8 total densities
+INFO: gauden.c(90): min_var=1.000000e-04
+INFO: gauden.c(165): compute 8 densities/frame
+INFO: main.c(431): Will reestimate mixing weights.
+INFO: main.c(433): Will reestimate means.
+INFO: main.c(435): Will reestimate variances.
+INFO: main.c(443): Will reestimate transition matrices
+INFO: main.c(456): Reading main dictionary: /home/nguyenchanh/project_beta/etc/project_beta.dic
+INFO: lexicon.c(221): 11 entries added from /home/nguyenchanh/project_beta/etc/project_beta.dic
+INFO: main.c(466): Reading filler dictionary: /home/nguyenchanh/project_beta/etc/project_beta.filler
+INFO: lexicon.c(221): 3 entries added from /home/nguyenchanh/project_beta/etc/project_beta.filler
+INFO: corpus.c(1062): Will process all remaining utts starting at 0
+INFO: main.c(665): Reestimation: Baum-Welch
+INFO: cmn.c(183): CMN: 41.98  7.86 -3.58  2.80 -1.52  0.56 -6.70  9.49 -4.96  5.33 -2.69  2.31  3.54 
+column defns
+	<seq>
+	<id>
+	<n_frame_in>
+	<n_frame_del>
+	<n_state_shmm>
+	<avg_states_alpha>
+	<avg_states_beta>
+	<avg_states_reest>
+	<avg_posterior_prune>
+	<frame_log_lik>
+	<utt_log_lik>
+	... timing info ... 
+utt>     0              speaker_0001 1284    0INFO: cvt2triphone.c(199): no multiphones defined, no conversion done
+   280 97  6 13 1.269114e-11 -1.913399e+02 -2.456804e+05
+INFO: cmn.c(183): CMN: 41.12  6.96 -3.66  2.68 -4.87  0.54  2.44  4.50 -5.47  4.31  0.95 -2.83  0.27 
+utt>     1              speaker_0002 1456    0   280 115  7 14 1.282870e-11 -1.902692e+02 -2.770319e+05
+INFO: cmn.c(183): CMN: 39.49  0.81 -7.25  3.01 -5.49 -1.28  4.52  7.01 -0.62  3.49  0.32 -1.13 -0.28 
+utt>     2              speaker_0003 1487    0   264 112  7 14 1.392514e-11 -1.888262e+02 -2.807845e+05
+INFO: cmn.c(183): CMN: 43.99  5.71 -1.70  0.94 -3.98 -1.67 -3.58 11.61 -5.52  5.49 -5.41 -1.79  1.17 
+utt>     3              speaker_0004 1165    0   248 107  7 15 1.748307e-11 -1.951049e+02 -2.272972e+05
+INFO: cmn.c(183): CMN: 41.68  5.12 -6.38  1.36 -2.68 -1.88 -3.31 10.93 -4.78  3.19 -1.99  0.16 -0.75 
+utt>     4              speaker_0005 1405    0   272 111  7 14 1.233691e-11 -1.912224e+02 -2.686675e+05
+INFO: cmn.c(183): CMN: 44.33  3.07 -8.11 -2.09 -3.64  2.50 -6.05 11.85 -3.32  5.81 -4.07 -1.93  2.10 
+utt>     5              speaker_0006 1469    0   280 116  8 17 1.630895e-11 -1.942336e+02 -2.853292e+05
+INFO: cmn.c(183): CMN: 44.78  2.59 -7.44  0.55 -4.57 -1.04 -6.75 13.65 -3.98  3.73 -2.57  0.04  0.94 
+utt>     6              speaker_0007 1615    0   288 107  7 14 1.366004e-11 -1.922584e+02 -3.104974e+05
+INFO: cmn.c(183): CMN: 41.61  2.00 -10.50 -2.47 -3.42 -1.27 -0.93 11.05  0.17  1.28 -2.13  0.44  1.12 
+utt>     7              speaker_0008 1448    0   272 151  14 29 2.473815e-11 -1.911672e+02 -2.768102e+05
+INFO: cmn.c(183): CMN: 43.53  3.22 -8.92 -1.06 -3.89 -0.98 -0.15 11.34 -0.11  1.77  0.44 -0.46  0.63 
+utt>     8              speaker_0009 2140    0   400 138  8 16 1.520614e-11 -1.894902e+02 -4.055091e+05
+INFO: cmn.c(183): CMN: 44.79  5.76 -10.89 -2.17 -8.45 -2.97 -0.73 10.80 -3.64  1.09  4.37 -4.22  1.37 
+utt>     9              speaker_0010 1417    0   272 125  9 19 1.759936e-11 -1.920739e+02 -2.721687e+05
+INFO: cmn.c(183): CMN: 43.35  7.92 -6.86 -0.89 -1.00 -1.81  1.48  9.50 -6.30  1.82 -0.98  1.73  1.37 
+utt>    10              speaker_0011 1370    0   280 98  6 13 1.211021e-11 -1.916169e+02 -2.625151e+05
+INFO: cmn.c(183): CMN: 43.95  7.57 -5.61  1.63 -1.99 -3.73 -2.81  6.98 -7.82  4.42 -1.97  1.27  0.38 
+utt>    11              speaker_0012 1269    0   280 116  7 14 1.245915e-11 -1.910730e+02 -2.424717e+05
+INFO: cmn.c(183): CMN: 44.59  3.52 -6.24 -1.39 -6.22 -2.32 -3.93 10.82 -5.64  7.61  0.35  2.65 -0.88 
+utt>    12              speaker_0013 1073    0   264 103  8 16 1.646886e-11 -1.904389e+02 -2.043409e+05
+INFO: cmn.c(183): CMN: 44.23  5.83 -3.44  0.70 -2.22 -1.34 -5.00 10.43 -7.30  3.20 -3.78  0.76  0.35 
+utt>    13              speaker_0014 1154    0   248 101  7 14 1.325740e-11 -1.916456e+02 -2.211590e+05
+INFO: cmn.c(183): CMN: 43.76  8.26 -7.07  1.92 -5.60 -0.16  2.16  8.70 -4.27  0.30 -0.47 -1.57  1.60 
+utt>    14              speaker_0015 1202    0   272 99  7 15 1.363483e-11 -1.915107e+02 -2.301959e+05
+INFO: cmn.c(183): CMN: 43.71  4.14 -8.96  1.68 -3.00 -4.28  0.29  9.00 -1.41  4.39 -2.06 -1.56  2.87 
+utt>    15              speaker_0016 1439    0   280 112  8 17 1.368033e-11 -1.914302e+02 -2.754680e+05
+INFO: cmn.c(183): CMN: 44.11  7.76 -5.68  2.43 -8.20 -0.82 -0.10  4.19 -3.95  1.92 -2.02 -0.67 -0.05 
+utt>    16              speaker_0017 1526    0   288 104  7 15 1.354825e-11 -1.894566e+02 -2.891108e+05
+INFO: cmn.c(183): CMN: 43.77  4.66 -13.01 -1.73 -6.36 -2.53 -0.98  9.96  0.34 -2.21 -1.68  1.76  1.42 
+utt>    17              speaker_0018 1418    0   272 138  12 25 2.062939e-11 -1.893749e+02 -2.685336e+05
+INFO: cmn.c(183): CMN: 42.85  3.90 -10.31  0.51 -5.27 -2.57 -1.55 10.21 -0.46  3.63 -0.74  0.94  1.45 
+utt>    18              speaker_0019 1896    0   400 126  7 15 1.471028e-11 -1.903266e+02 -3.608592e+05
+INFO: cmn.c(183): CMN: 44.98  5.17 -12.75 -2.49 -7.82 -4.28  1.70  9.97 -0.83 -3.05  2.83 -3.88  1.38 
+utt>    19              speaker_0020 1411    0   272 148  10 20 1.846390e-11 -1.922718e+02 -2.712956e+05
+INFO: cmn.c(183): CMN: 62.00  7.71 -7.66 -0.27 -6.58  5.76 -0.13  3.59 -5.51 -1.58  2.50 -0.14 -0.59 
+utt>    20              speaker_0021  413    0   128 101  10 21 2.165185e-11 -1.827827e+02 -7.548923e+04
+INFO: cmn.c(183): CMN: 65.60  3.18 -11.19 -2.29 -5.30  5.38  2.95  6.22 -4.63  0.20  2.58  1.07  0.13 
+utt>    21              speaker_0022  521    0   128 115  11 22 2.651361e-11 -1.832196e+02 -9.545740e+04
+INFO: cmn.c(183): CMN: 64.09  7.41 -9.60 -4.14 -4.59  4.03  1.90  7.10 -9.31 -3.85  1.29  1.95  0.99 
+utt>    22              speaker_0023  330    0    96 85  10 20 1.816020e-11 -1.826916e+02 -6.028821e+04
+INFO: cmn.c(183): CMN: 62.62  7.76 -11.74 -1.80 -2.41  4.58  2.37  5.89 -12.48 -0.32  2.72  1.53  0.89 
+utt>    23              speaker_0024  481    0   128 113  10 21 1.894612e-11 -1.801441e+02 -8.664929e+04
+INFO: cmn.c(183): CMN: 63.79  6.86 -10.63 -4.26 -13.16  5.53  7.56  5.91 -3.74  1.62 -1.75 -0.37  0.65 
+utt>    24              speaker_0025  425    0   120 106  13 27 2.222325e-11 -1.825115e+02 -7.756740e+04
+INFO: cmn.c(183): CMN: 66.53  4.61 -9.69 -4.16 -11.01  6.86  7.52  6.66 -4.55 -2.46  1.51 -0.08  1.21 
+utt>    25              speaker_0026  422    0   120 104  12 24 2.057183e-11 -1.846309e+02 -7.791424e+04
+INFO: cmn.c(183): CMN: 66.99  4.61 -10.29 -4.31 -5.89  6.38  6.24  7.15 -8.60 -0.63  2.45  1.62  0.93 
+utt>    26              speaker_0027  348    0    88 79  11 23 2.319324e-11 -1.830051e+02 -6.368576e+04
+INFO: cmn.c(183): CMN: 65.77  5.24 -10.04 -1.38 -4.59  4.97  4.44  6.02 -11.44  0.50  3.50  2.07  2.43 
+utt>    27              speaker_0028  332    0    96 85  10 20 2.431339e-11 -1.836848e+02 -6.098335e+04
+INFO: cmn.c(183): CMN: 65.53  5.14 -10.14 -1.02 -5.61  7.00  2.83  5.89 -9.12  2.46  3.27  2.83  1.23 
+utt>    28              speaker_0029  333    0    96 85  11 23 2.288138e-11 -1.828428e+02 -6.088666e+04
+INFO: cmn.c(183): CMN: 66.78  2.36 -11.11 -7.38 -1.26  8.30  3.93  5.57 -9.44  0.32 -0.65  0.27 -1.11 
+utt>    29              speaker_0030  403    0    96 86  10 21 2.864244e-11 -1.809672e+02 -7.292980e+04
+INFO: cmn.c(183): CMN: 66.36  3.93 -10.58 -2.15 -4.45  6.46  6.11  3.18 -11.24  2.53  3.45  2.38  2.30 
+utt>    30              speaker_0031  634    0   160 118  10 21 2.030607e-11 -1.835700e+02 -1.163834e+05
+INFO: cmn.c(183): CMN: 64.16  3.96 -10.03 -1.09 -7.05  5.90  3.85  7.70 -4.84  0.54  2.41  1.32  1.14 
+utt>    31              speaker_0032  563    0   152 128  10 21 2.211912e-11 -1.834650e+02 -1.032908e+05
+INFO: cmn.c(183): CMN: 64.72  4.68 -12.43 -2.30 -3.71  3.26  5.24  3.81 -9.51  1.15  1.00  2.65  0.48 
+utt>    32              speaker_0033  613    0   160 132  9 19 2.005645e-11 -1.827741e+02 -1.120405e+05
+INFO: cmn.c(183): CMN: 64.06  4.63 -11.37  2.15 -8.61  2.58  5.41  5.35 -7.24 -0.40  4.34  1.08  0.01 
+utt>    33              speaker_0034  528    0   136 117  10 20 2.076953e-11 -1.829372e+02 -9.659083e+04
+INFO: cmn.c(183): CMN: 67.14  0.48 -11.06 -2.56 -3.60  5.05  6.68  7.65 -10.33  1.37  3.06  0.75  1.76 
+utt>    34              speaker_0035  583    0   136 121  10 20 2.218974e-11 -1.838366e+02 -1.071768e+05
+INFO: cmn.c(183): CMN: 66.49  1.79 -11.17 -1.72 -2.60  4.88  6.48  2.15 -10.93  3.51  3.63  3.64  1.31 
+utt>    35              speaker_0036  589    0   136 117  10 20 2.028468e-11 -1.827731e+02 -1.076533e+05
+INFO: cmn.c(183): CMN: 65.39  3.61 -8.79 -0.57 -5.76  5.94  6.06  9.76 -5.91  1.51  2.11 -0.27 -0.20 
+utt>    36              speaker_0037  403    0    88 79  10 19 1.760703e-11 -1.819965e+02 -7.334461e+04
+INFO: cmn.c(183): CMN: 65.93  3.64 -10.89 -3.75 -5.73  4.25  6.73  7.61 -7.85  1.85  1.61 -0.67  0.77 
+utt>    37              speaker_0038  516    0   136 116  10 21 2.243706e-11 -1.830099e+02 -9.443311e+04
+INFO: cmn.c(183): CMN: 62.45  3.74 -6.59 -3.08 -3.40  5.60  2.37  1.99 -5.90  0.49  2.54  4.47  0.84 
+utt>    38              speaker_0039  719    0   144 123  9 18 1.684190e-11 -1.805567e+02 -1.298203e+05
+INFO: cmn.c(183): CMN: 66.04  0.59 -10.49 -6.22 -4.92  7.19  3.81  6.66 -7.40 -0.01  0.64  1.39 -1.28 
+utt>    39              speaker_0040  380    0    72 66  12 25 2.493608e-11 -1.821420e+02 -6.921397e+04
+INFO: cmn.c(183): CMN: 61.99  6.65 -10.01 -3.36 -3.97  6.62  3.10  6.15 -8.02  1.12  1.71  2.40  2.61 
+utt>    40              speaker_0041  531    0   120 108  9 19 1.673724e-11 -1.802128e+02 -9.569301e+04
+INFO: cmn.c(183): CMN: 64.97  2.84 -8.44 -3.30 -5.30  6.76  5.87  3.47 -7.65  0.41  0.26  1.07  0.54 
+utt>    41              speaker_0042  549    0   112 102  17 34 2.975285e-11 -1.829546e+02 -1.004421e+05
+overall> stats 39260 (-0) -1.888349e+02 -7.413660e+06
+
+INFO: s3mixw_io.c(233): Wrote /home/nguyenchanh/project_beta/bwaccumdir/project_beta_buff_1/mixw_counts [57x4x8 array]
+INFO: s3tmat_io.c(176): Wrote /home/nguyenchanh/project_beta/bwaccumdir/project_beta_buff_1/tmat_counts [19x3x4 array]
+INFO: s3gau_io.c(485): Wrote /home/nguyenchanh/project_beta/bwaccumdir/project_beta_buff_1/gauden_counts with means with vars (2pass) [1x4x8 vector arrays]
+INFO: main.c(999): Counts saved to /home/nguyenchanh/project_beta/bwaccumdir/project_beta_buff_1
+Thu Jun 30 21:27:55 2016

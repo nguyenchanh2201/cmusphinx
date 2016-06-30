@@ -1,0 +1,24 @@
+Current configuration:
+[NAME]		[DEFLT]	[VALUE]
+-example	no	no
+-help		no	no
+-mixwfn			/home/nguyenchanh/project_beta/model_parameters/project_beta.ci_semi_flatinitial/mixture_weights
+-moddeffn		/home/nguyenchanh/project_beta/model_architecture/project_beta.ci.mdef
+-ndensity	256	8
+-nstream	4	4
+-tmatfn			/home/nguyenchanh/project_beta/model_parameters/project_beta.ci_semi_flatinitial/transition_matrices
+-topo			/home/nguyenchanh/project_beta/model_architecture/project_beta.topology
+
+INFO: model_def_io.c(573): Model definition info:
+INFO: model_def_io.c(574): 19 total models defined (19 base, 0 tri)
+INFO: model_def_io.c(575): 76 total states
+INFO: model_def_io.c(576): 57 total tied states
+INFO: model_def_io.c(577): 57 total tied CI states
+INFO: model_def_io.c(578): 19 total tied transition matrices
+INFO: model_def_io.c(579): 4 max state/model
+INFO: model_def_io.c(580): 4 min state/model
+INFO: s3tmat_io.c(176): Wrote /home/nguyenchanh/project_beta/model_parameters/project_beta.ci_semi_flatinitial/transition_matrices [19x3x4 array]
+INFO: s3mixw_io.c(233): Wrote /home/nguyenchanh/project_beta/model_parameters/project_beta.ci_semi_flatinitial/mixture_weights [57x4x8 array]
+main.c(83): Reading model definition file /home/nguyenchanh/project_beta/model_architecture/project_beta.ci.mdef
+main.c(90): 19 models defined
+Thu Jun 30 21:27:47 2016

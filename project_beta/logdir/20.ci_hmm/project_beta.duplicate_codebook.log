@@ -1,0 +1,97 @@
+Current configuration:
+[NAME]		[DEFLT]	[VALUE]
+-dest_meanfn		/home/nguyenchanh/project_beta/model_parameters/project_beta.ci_semi_flatinitial/means
+-dest_mixwfn		/home/nguyenchanh/project_beta/model_parameters/project_beta.ci_semi_flatinitial/mixture_weights
+-dest_moddeffn		/home/nguyenchanh/project_beta/model_architecture/project_beta.ci.mdef
+-dest_tmatfn		/home/nguyenchanh/project_beta/model_parameters/project_beta.ci_semi_flatinitial/transition_matrices
+-dest_ts2cbfn		.semi.
+-dest_varfn		/home/nguyenchanh/project_beta/model_parameters/project_beta.ci_semi_flatinitial/variances
+-example	no	no
+-fullvar	no	no
+-help		no	no
+-src_meanfn		/home/nguyenchanh/project_beta/model_parameters/project_beta.ci_semi_flatinitial/means
+-src_mixwfn		/home/nguyenchanh/project_beta/model_parameters/project_beta.ci_semi_flatinitial/mixture_weights
+-src_moddeffn		/home/nguyenchanh/project_beta/model_architecture/project_beta.ci.mdef
+-src_tmatfn		/home/nguyenchanh/project_beta/model_parameters/project_beta.ci_semi_flatinitial/transition_matrices
+-src_ts2cbfn		.semi.
+-src_varfn		/home/nguyenchanh/project_beta/model_parameters/project_beta.ci_semi_flatinitial/variances
+
+INFO: main.c(261): Reading src /home/nguyenchanh/project_beta/model_architecture/project_beta.ci.mdef
+INFO: model_def_io.c(573): Model definition info:
+INFO: model_def_io.c(574): 19 total models defined (19 base, 0 tri)
+INFO: model_def_io.c(575): 76 total states
+INFO: model_def_io.c(576): 57 total tied states
+INFO: model_def_io.c(577): 57 total tied CI states
+INFO: model_def_io.c(578): 19 total tied transition matrices
+INFO: model_def_io.c(579): 4 max state/model
+INFO: model_def_io.c(580): 4 min state/model
+INFO: main.c(272): Generating semi-continous ts2cb mapping
+INFO: main.c(299): Reading src /home/nguyenchanh/project_beta/model_parameters/project_beta.ci_semi_flatinitial/mixture_weights
+INFO: s3mixw_io.c(117): Read /home/nguyenchanh/project_beta/model_parameters/project_beta.ci_semi_flatinitial/mixture_weights [57x4x8 array]
+INFO: main.c(309): Reading src /home/nguyenchanh/project_beta/model_parameters/project_beta.ci_semi_flatinitial/transition_matrices
+INFO: s3tmat_io.c(118): Read /home/nguyenchanh/project_beta/model_parameters/project_beta.ci_semi_flatinitial/transition_matrices [19x3x4 array]
+INFO: main.c(318): Reading src /home/nguyenchanh/project_beta/model_parameters/project_beta.ci_semi_flatinitial/means
+INFO: s3gau_io.c(169): Read /home/nguyenchanh/project_beta/model_parameters/project_beta.ci_semi_flatinitial/means [1x4x8 array]
+INFO: main.c(342): Reading src /home/nguyenchanh/project_beta/model_parameters/project_beta.ci_semi_flatinitial/variances
+INFO: s3gau_io.c(169): Read /home/nguyenchanh/project_beta/model_parameters/project_beta.ci_semi_flatinitial/variances [1x4x8 array]
+INFO: main.c(391): Reading dest /home/nguyenchanh/project_beta/model_architecture/project_beta.ci.mdef
+INFO: model_def_io.c(573): Model definition info:
+INFO: model_def_io.c(574): 19 total models defined (19 base, 0 tri)
+INFO: model_def_io.c(575): 76 total states
+INFO: model_def_io.c(576): 57 total tied states
+INFO: model_def_io.c(577): 57 total tied CI states
+INFO: model_def_io.c(578): 19 total tied transition matrices
+INFO: model_def_io.c(579): 4 max state/model
+INFO: model_def_io.c(580): 4 min state/model
+INFO: main.c(401): Generating semi-continous ts2cb mapping
+INFO: main.c(431): Calculating initial model parameters
+INFO: main.c(439): Alloc 19x3x4 dest tmat
+INFO: main.c(450): Alloc 57x4x8 dest mixw
+INFO: main.c(463): Alloc 1x4x8 dest mean and var
+       SIL <- SIL       : [tm     0 +=     0]
+[mx     0(0) +=     0] [mg     0(0) <-     0] [mx     1(1) +=     1] [mx     2(2) +=     2] 
+      aajt <- aajt      : [tm     1 +=     1]
+[mx     3(0) +=     3] [mx     4(1) +=     4] [mx     5(2) +=     5] 
+      aast <- aast      : [tm     2 +=     2]
+[mx     6(0) +=     6] [mx     7(1) +=     7] [mx     8(2) +=     8] 
+       afn <- afn       : [tm     3 +=     3]
+[mx     9(0) +=     9] [mx    10(1) +=    10] [mx    11(2) +=    11] 
+       ajt <- ajt       : [tm     4 +=     4]
+[mx    12(0) +=    12] [mx    13(1) +=    13] [mx    14(2) +=    14] 
+        ar <- ar        : [tm     5 +=     5]
+[mx    15(0) +=    15] [mx    16(1) +=    16] [mx    17(2) +=    17] 
+       asc <- asc       : [tm     6 +=     6]
+[mx    18(0) +=    18] [mx    19(1) +=    19] [mx    20(2) +=    20] 
+      awst <- awst      : [tm     7 +=     7]
+[mx    21(0) +=    21] [mx    22(1) +=    22] [mx    23(2) +=    23] 
+         b <- b         : [tm     8 +=     8]
+[mx    24(0) +=    24] [mx    25(1) +=    25] [mx    26(2) +=    26] 
+         c <- c         : [tm     9 +=     9]
+[mx    27(0) +=    27] [mx    28(1) +=    28] [mx    29(2) +=    29] 
+        dd <- dd        : [tm    10 +=    10]
+[mx    30(0) +=    30] [mx    31(1) +=    31] [mx    32(2) +=    32] 
+       efn <- efn       : [tm    11 +=    11]
+[mx    33(0) +=    33] [mx    34(1) +=    34] [mx    35(2) +=    35] 
+         h <- h         : [tm    12 +=    12]
+[mx    36(0) +=    36] [mx    37(1) +=    37] [mx    38(2) +=    38] 
+     ieefu <- ieefu     : [tm    13 +=    13]
+[mx    39(0) +=    39] [mx    40(1) +=    40] [mx    41(2) +=    41] 
+        ng <- ng        : [tm    14 +=    14]
+[mx    42(0) +=    42] [mx    43(1) +=    43] [mx    44(2) +=    44] 
+       ofa <- ofa       : [tm    15 +=    15]
+[mx    45(0) +=    45] [mx    46(1) +=    46] [mx    47(2) +=    47] 
+        qu <- qu        : [tm    16 +=    16]
+[mx    48(0) +=    48] [mx    49(1) +=    49] [mx    50(2) +=    50] 
+         t <- t         : [tm    17 +=    17]
+[mx    51(0) +=    51] [mx    52(1) +=    52] [mx    53(2) +=    53] 
+        ur <- ur        : INFO: main.c(529): Writing dest /home/nguyenchanh/project_beta/model_parameters/project_beta.ci_semi_flatinitial/transition_matrices
+INFO: s3tmat_io.c(176): Wrote /home/nguyenchanh/project_beta/model_parameters/project_beta.ci_semi_flatinitial/transition_matrices [19x3x4 array]
+INFO: main.c(540): Writing dest /home/nguyenchanh/project_beta/model_parameters/project_beta.ci_semi_flatinitial/mixture_weights
+INFO: s3mixw_io.c(233): Wrote /home/nguyenchanh/project_beta/model_parameters/project_beta.ci_semi_flatinitial/mixture_weights [57x4x8 array]
+INFO: main.c(549): Writing dest /home/nguyenchanh/project_beta/model_parameters/project_beta.ci_semi_flatinitial/means
+INFO: s3gau_io.c(228): Wrote /home/nguyenchanh/project_beta/model_parameters/project_beta.ci_semi_flatinitial/means [1x4x8 array]
+INFO: main.c(561): Writing dest /home/nguyenchanh/project_beta/model_parameters/project_beta.ci_semi_flatinitial/variances
+INFO: s3gau_io.c(228): Wrote /home/nguyenchanh/project_beta/model_parameters/project_beta.ci_semi_flatinitial/variances [1x4x8 array]
+[tm    18 +=    18]
+[mx    54(0) +=    54] [mx    55(1) +=    55] [mx    56(2) +=    56] 
+Thu Jun 30 21:27:47 2016

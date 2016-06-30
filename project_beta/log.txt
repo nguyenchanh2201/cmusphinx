@@ -1,0 +1,100 @@
+MODULE: 000 Computing feature from audio files
+Extracting features from  segments starting at  (part 1 of 1) 
+Feature extraction is done
+MODULE: 00 verify training files
+    Phase 1: Checking to see if the dict and filler dict agrees with the phonelist file.
+        Found 14 words using 19 phones
+    Phase 2: Checking to make sure there are not duplicate entries in the dictionary
+    Phase 3: Check general format for the fileids file; utterance length (must be positive); files exist
+    Phase 4: Checking number of lines in the transcript file should match lines in fileids file
+    Phase 5: Determine amount of training data, see if n_tied_states seems reasonable.
+        Estimated Total Hours Training: 0.0399638888888889
+        This is a small amount of data, no comment at this time
+    Phase 6: Checking that all the words in the transcript are in the dictionary
+        Words in dictionary: 11
+        Words in filler dictionary: 3
+    Phase 7: Checking that all the phones in the transcript are in the phonelist, and all phones in the phonelist appear at least once
+MODULE: 0000 train grapheme-to-phoneme model
+Skipped (set $CFG_G2P_MODEL = 'yes' to enable)
+MODULE: 01 Train LDA transformation
+Skipped (set $CFG_LDA_MLLT = 'yes' to enable)
+MODULE: 02 Train MLLT transformation
+Skipped (set $CFG_LDA_MLLT = 'yes' to enable)
+MODULE: 05 Vector Quantization
+Skipped for continuous models
+MODULE: 10 Training Context Independent models for forced alignment and VTLN
+Skipped:  $ST::CFG_FORCEDALIGN set to 'no' in sphinx_train.cfg
+Skipped:  $ST::CFG_VTLN set to 'no' in sphinx_train.cfg
+MODULE: 11 Force-aligning transcripts
+Skipped:  $ST::CFG_FORCEDALIGN set to 'no' in sphinx_train.cfg
+MODULE: 12 Force-aligning data for VTLN
+Skipped:  $ST::CFG_VTLN set to 'no' in sphinx_train.cfg
+MODULE: 20 Training Context Independent models
+    Phase 1: Cleaning up directories:
+	accumulator...logs...qmanager...models...
+    Phase 2: Flat initialize
+    Phase 3: Forward-Backward
+        Baum welch starting for 1 Gaussian(s), iteration: 1 (1 of 1)
+        0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+        Normalization for iteration: 1
+        Current Overall Likelihood Per Frame = -170.698199763676
+        Baum welch starting for 1 Gaussian(s), iteration: 2 (1 of 1)
+        0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+        Normalization for iteration: 2
+        Current Overall Likelihood Per Frame = -169.468617501911
+        Convergence Ratio = 1.22958226176456
+        Baum welch starting for 1 Gaussian(s), iteration: 3 (1 of 1)
+        0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+        Normalization for iteration: 3
+        Current Overall Likelihood Per Frame = -165.058316535761
+        Convergence Ratio = 4.41030096614955
+        Baum welch starting for 1 Gaussian(s), iteration: 4 (1 of 1)
+        0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+        Normalization for iteration: 4
+        Current Overall Likelihood Per Frame = -161.035657190519
+        Convergence Ratio = 4.02265934524178
+        Baum welch starting for 1 Gaussian(s), iteration: 5 (1 of 1)
+        0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+        Normalization for iteration: 5
+        Current Overall Likelihood Per Frame = -159.805518871203
+        Convergence Ratio = 1.23013831931584
+        Baum welch starting for 1 Gaussian(s), iteration: 6 (1 of 1)
+        0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+ERROR: This step had 2 ERROR messages and 0 WARNING messages.  Please check the log file for details.
+        Normalization for iteration: 6
+        Current Overall Likelihood Per Frame = -159.579604350683
+        Convergence Ratio = 0.225914520520462
+        Baum welch starting for 1 Gaussian(s), iteration: 7 (1 of 1)
+        0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+ERROR: This step had 2 ERROR messages and 0 WARNING messages.  Please check the log file for details.
+        Normalization for iteration: 7
+        Current Overall Likelihood Per Frame = -159.47492517702
+        Convergence Ratio = 0.104679173662788
+        Baum welch starting for 1 Gaussian(s), iteration: 8 (1 of 1)
+        0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+ERROR: This step had 2 ERROR messages and 0 WARNING messages.  Please check the log file for details.
+        Normalization for iteration: 8
+        Current Overall Likelihood Per Frame = -159.408861960727
+        Training completed after 8 iterations
+Skipped (set $CFG_CD_TRAIN = 'yes' to enable)
+Skipped (set $CFG_CD_TRAIN = 'yes' to enable)
+Skipped (set $CFG_CD_TRAIN = 'yes' to enable)
+Skipped (set $CFG_CD_TRAIN = 'yes' to enable)
+MODULE: 60 Lattice Generation
+Skipped:  $ST::CFG_MMIE set to 'no' in sphinx_train.cfg
+MODULE: 61 Lattice Pruning
+Skipped:  $ST::CFG_MMIE set to 'no' in sphinx_train.cfg
+MODULE: 62 Lattice Format Conversion
+Skipped:  $ST::CFG_MMIE set to 'no' in sphinx_train.cfg
+MODULE: 65 MMIE Training
+Skipped:  $ST::CFG_MMIE set to 'no' in sphinx_train.cfg
+MODULE: 90 deleted interpolation
+Skipped for continuous models
+MODULE: DECODE Decoding using models previously trained
+        Decoding 0 segments starting at 0 (part 1 of 1) 
+ERROR: FATAL: "batch.c", line 815: Failed to open control file '/home/nguyenchanh/project_beta/etc/project_beta_test.fileids': No such file or directory
+ERROR: Failed to start pocketsphinx_batch
+        Aligning results to find error rate
+Sphinxtrain path: /usr/local/lib/sphinxtrain
+Sphinxtrain binaries path: /usr/local/libexec/sphinxtrain
+Running the training

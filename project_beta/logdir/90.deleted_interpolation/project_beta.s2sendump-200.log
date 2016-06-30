@@ -1,0 +1,22 @@
+Current configuration:
+[NAME]		[DEFLT]	[VALUE]
+-example	no	no
+-help		no	no
+-mixwfn			/home/nguyenchanh/project_beta/model_parameters/project_beta.cd_semi_200_delinterp/mixture_weights
+-moddeffn		/home/nguyenchanh/project_beta/model_architecture/project_beta.200.mdef
+-mwfloor	0.00001	1.000000e-07
+-pocketsphinx	no	yes
+-sendumpfn		/home/nguyenchanh/project_beta/model_parameters/project_beta.cd_semi_200_delinterp/sendump
+
+INFO: model_def_io.c(573): Model definition info:
+INFO: model_def_io.c(574): 19 total models defined (19 base, 0 tri)
+INFO: model_def_io.c(575): 76 total states
+INFO: model_def_io.c(576): 57 total tied states
+INFO: model_def_io.c(577): 57 total tied CI states
+INFO: model_def_io.c(578): 19 total tied transition matrices
+INFO: model_def_io.c(579): 4 max state/model
+INFO: model_def_io.c(580): 4 min state/model
+INFO: senone.c(210): Reading senone mixture weights: /home/nguyenchanh/project_beta/model_parameters/project_beta.cd_semi_200_delinterp/mixture_weights
+INFO: senone.c(331): Read mixture weights for 57 senones: 4 features x 8 codewords
+INFO: mk_s2sendump.c(207): Writing PocketSphinx format sendump file: /home/nguyenchanh/project_beta/model_parameters/project_beta.cd_semi_200_delinterp/sendump
+Thu Jun 30 21:27:59 2016

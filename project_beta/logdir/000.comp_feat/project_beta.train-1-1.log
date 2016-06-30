@@ -1,0 +1,102 @@
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-alpha			0.97		9.700000e-01
+-argfile				
+-blocksize		2048		2048
+-build_outdirs		yes		yes
+-c					/home/nguyenchanh/project_beta/etc/project_beta_train.fileids
+-cep2spec		no		no
+-di					/home/nguyenchanh/project_beta/wav
+-dither			no		no
+-do					/home/nguyenchanh/project_beta/feat
+-doublebw		no		no
+-ei					wav
+-eo					mfc
+-example		no		no
+-frate			100		100
+-help			no		no
+-i					
+-input_endian		little		little
+-lifter			0		22
+-logspec		no		no
+-lowerf			133.33334	2.000000e+02
+-mach_endian		little		little
+-mswav			no		yes
+-ncep			13		13
+-nchans			1		1
+-nfft			512		512
+-nfilt			40		15
+-nist			no		no
+-npart			0		1
+-nskip			0		0
+-o					
+-ofmt			sphinx		sphinx
+-part			0		1
+-raw			no		no
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-runlen			-1		-1
+-samprate		16000		8.000000e+03
+-seed			-1		-1
+-smoothspec		no		no
+-spec2cep		no		no
+-sph2pipe		no		no
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	3.500000e+03
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-whichchan		0		0
+-wlen			0.025625	2.562500e-02
+
+INFO: sphinx_fe.c(957): Processing all remaining utterances at position 0
+INFO: sphinx_fe.c(764): Converting /home/nguyenchanh/project_beta/wav/train/speaker_0001.wav to /home/nguyenchanh/project_beta/feat/train/speaker_0001.mfc
+INFO: sphinx_fe.c(764): Converting /home/nguyenchanh/project_beta/wav/train/speaker_0002.wav to /home/nguyenchanh/project_beta/feat/train/speaker_0002.mfc
+INFO: sphinx_fe.c(764): Converting /home/nguyenchanh/project_beta/wav/train/speaker_0003.wav to /home/nguyenchanh/project_beta/feat/train/speaker_0003.mfc
+INFO: sphinx_fe.c(764): Converting /home/nguyenchanh/project_beta/wav/train/speaker_0004.wav to /home/nguyenchanh/project_beta/feat/train/speaker_0004.mfc
+INFO: sphinx_fe.c(764): Converting /home/nguyenchanh/project_beta/wav/train/speaker_0005.wav to /home/nguyenchanh/project_beta/feat/train/speaker_0005.mfc
+INFO: sphinx_fe.c(764): Converting /home/nguyenchanh/project_beta/wav/train/speaker_0006.wav to /home/nguyenchanh/project_beta/feat/train/speaker_0006.mfc
+INFO: sphinx_fe.c(764): Converting /home/nguyenchanh/project_beta/wav/train/speaker_0007.wav to /home/nguyenchanh/project_beta/feat/train/speaker_0007.mfc
+INFO: sphinx_fe.c(764): Converting /home/nguyenchanh/project_beta/wav/train/speaker_0008.wav to /home/nguyenchanh/project_beta/feat/train/speaker_0008.mfc
+INFO: sphinx_fe.c(764): Converting /home/nguyenchanh/project_beta/wav/train/speaker_0009.wav to /home/nguyenchanh/project_beta/feat/train/speaker_0009.mfc
+INFO: sphinx_fe.c(764): Converting /home/nguyenchanh/project_beta/wav/train/speaker_0010.wav to /home/nguyenchanh/project_beta/feat/train/speaker_0010.mfc
+INFO: sphinx_fe.c(764): Converting /home/nguyenchanh/project_beta/wav/train/speaker_0011.wav to /home/nguyenchanh/project_beta/feat/train/speaker_0011.mfc
+INFO: sphinx_fe.c(764): Converting /home/nguyenchanh/project_beta/wav/train/speaker_0012.wav to /home/nguyenchanh/project_beta/feat/train/speaker_0012.mfc
+INFO: sphinx_fe.c(764): Converting /home/nguyenchanh/project_beta/wav/train/speaker_0013.wav to /home/nguyenchanh/project_beta/feat/train/speaker_0013.mfc
+INFO: sphinx_fe.c(764): Converting /home/nguyenchanh/project_beta/wav/train/speaker_0014.wav to /home/nguyenchanh/project_beta/feat/train/speaker_0014.mfc
+INFO: sphinx_fe.c(764): Converting /home/nguyenchanh/project_beta/wav/train/speaker_0015.wav to /home/nguyenchanh/project_beta/feat/train/speaker_0015.mfc
+INFO: sphinx_fe.c(764): Converting /home/nguyenchanh/project_beta/wav/train/speaker_0016.wav to /home/nguyenchanh/project_beta/feat/train/speaker_0016.mfc
+INFO: sphinx_fe.c(764): Converting /home/nguyenchanh/project_beta/wav/train/speaker_0017.wav to /home/nguyenchanh/project_beta/feat/train/speaker_0017.mfc
+INFO: sphinx_fe.c(764): Converting /home/nguyenchanh/project_beta/wav/train/speaker_0018.wav to /home/nguyenchanh/project_beta/feat/train/speaker_0018.mfc
+INFO: sphinx_fe.c(764): Converting /home/nguyenchanh/project_beta/wav/train/speaker_0019.wav to /home/nguyenchanh/project_beta/feat/train/speaker_0019.mfc
+INFO: sphinx_fe.c(764): Converting /home/nguyenchanh/project_beta/wav/train/speaker_0020.wav to /home/nguyenchanh/project_beta/feat/train/speaker_0020.mfc
+INFO: sphinx_fe.c(764): Converting /home/nguyenchanh/project_beta/wav/train/speaker_0021.wav to /home/nguyenchanh/project_beta/feat/train/speaker_0021.mfc
+INFO: sphinx_fe.c(764): Converting /home/nguyenchanh/project_beta/wav/train/speaker_0022.wav to /home/nguyenchanh/project_beta/feat/train/speaker_0022.mfc
+INFO: sphinx_fe.c(764): Converting /home/nguyenchanh/project_beta/wav/train/speaker_0023.wav to /home/nguyenchanh/project_beta/feat/train/speaker_0023.mfc
+INFO: sphinx_fe.c(764): Converting /home/nguyenchanh/project_beta/wav/train/speaker_0024.wav to /home/nguyenchanh/project_beta/feat/train/speaker_0024.mfc
+INFO: sphinx_fe.c(764): Converting /home/nguyenchanh/project_beta/wav/train/speaker_0025.wav to /home/nguyenchanh/project_beta/feat/train/speaker_0025.mfc
+INFO: sphinx_fe.c(764): Converting /home/nguyenchanh/project_beta/wav/train/speaker_0026.wav to /home/nguyenchanh/project_beta/feat/train/speaker_0026.mfc
+INFO: sphinx_fe.c(764): Converting /home/nguyenchanh/project_beta/wav/train/speaker_0027.wav to /home/nguyenchanh/project_beta/feat/train/speaker_0027.mfc
+INFO: sphinx_fe.c(764): Converting /home/nguyenchanh/project_beta/wav/train/speaker_0028.wav to /home/nguyenchanh/project_beta/feat/train/speaker_0028.mfc
+INFO: sphinx_fe.c(764): Converting /home/nguyenchanh/project_beta/wav/train/speaker_0029.wav to /home/nguyenchanh/project_beta/feat/train/speaker_0029.mfc
+INFO: sphinx_fe.c(764): Converting /home/nguyenchanh/project_beta/wav/train/speaker_0030.wav to /home/nguyenchanh/project_beta/feat/train/speaker_0030.mfc
+INFO: sphinx_fe.c(764): Converting /home/nguyenchanh/project_beta/wav/train/speaker_0031.wav to /home/nguyenchanh/project_beta/feat/train/speaker_0031.mfc
+INFO: sphinx_fe.c(764): Converting /home/nguyenchanh/project_beta/wav/train/speaker_0032.wav to /home/nguyenchanh/project_beta/feat/train/speaker_0032.mfc
+INFO: sphinx_fe.c(764): Converting /home/nguyenchanh/project_beta/wav/train/speaker_0033.wav to /home/nguyenchanh/project_beta/feat/train/speaker_0033.mfc
+INFO: sphinx_fe.c(764): Converting /home/nguyenchanh/project_beta/wav/train/speaker_0034.wav to /home/nguyenchanh/project_beta/feat/train/speaker_0034.mfc
+INFO: sphinx_fe.c(764): Converting /home/nguyenchanh/project_beta/wav/train/speaker_0035.wav to /home/nguyenchanh/project_beta/feat/train/speaker_0035.mfc
+INFO: sphinx_fe.c(764): Converting /home/nguyenchanh/project_beta/wav/train/speaker_0036.wav to /home/nguyenchanh/project_beta/feat/train/speaker_0036.mfc
+INFO: sphinx_fe.c(764): Converting /home/nguyenchanh/project_beta/wav/train/speaker_0037.wav to /home/nguyenchanh/project_beta/feat/train/speaker_0037.mfc
+INFO: sphinx_fe.c(764): Converting /home/nguyenchanh/project_beta/wav/train/speaker_0038.wav to /home/nguyenchanh/project_beta/feat/train/speaker_0038.mfc
+INFO: sphinx_fe.c(764): Converting /home/nguyenchanh/project_beta/wav/train/speaker_0039.wav to /home/nguyenchanh/project_beta/feat/train/speaker_0039.mfc
+INFO: sphinx_fe.c(764): Converting /home/nguyenchanh/project_beta/wav/train/speaker_0040.wav to /home/nguyenchanh/project_beta/feat/train/speaker_0040.mfc
+INFO: sphinx_fe.c(764): Converting /home/nguyenchanh/project_beta/wav/train/speaker_0041.wav to /home/nguyenchanh/project_beta/feat/train/speaker_0041.mfc
+INFO: sphinx_fe.c(764): Converting /home/nguyenchanh/project_beta/wav/train/speaker_0042.wav to /home/nguyenchanh/project_beta/feat/train/speaker_0042.mfc
+Thu Jun 30 21:27:46 2016

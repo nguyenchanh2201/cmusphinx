@@ -1,0 +1,22 @@
+Current configuration:
+[NAME]		[DEFLT]	[VALUE]
+-accumdirs		/home/nguyenchanh/project_beta/bwaccumdir/project_beta_buff_1,
+-cilambda	0.9	9.000000e-01
+-example	no	no
+-help		no	no
+-maxiter	100	4000
+-mixwfn			/home/nguyenchanh/project_beta/model_parameters/project_beta.cd_semi_200_delinterp/mixture_weights
+-moddeffn		/home/nguyenchanh/project_beta/model_architecture/project_beta.200.mdef
+
+INFO: model_def_io.c(573): Model definition info:
+INFO: model_def_io.c(574): 19 total models defined (19 base, 0 tri)
+INFO: model_def_io.c(575): 76 total states
+INFO: model_def_io.c(576): 57 total tied states
+INFO: model_def_io.c(577): 57 total tied CI states
+INFO: model_def_io.c(578): 19 total tied transition matrices
+INFO: model_def_io.c(579): 4 max state/model
+INFO: model_def_io.c(580): 4 min state/model
+INFO: main.c(474): Reading /home/nguyenchanh/project_beta/bwaccumdir/project_beta_buff_1/mixw_counts
+INFO: s3mixw_io.c(117): Read /home/nguyenchanh/project_beta/bwaccumdir/project_beta_buff_1/mixw_counts [57x4x8 array]
+delint: main.c:560: rd_interp_wr: Assertion `accum_dir[i] != ((void *)0)' failed.
+Thu Jun 30 21:27:59 2016
